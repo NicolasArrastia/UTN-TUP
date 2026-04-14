@@ -1,0 +1,95 @@
+:root {
+  --color-primario: #ff6347;
+  --color-fondo: #f0f0f0;
+  --color-texto: #333;
+  --color-blanco: #fff;
+  --color-borde: #ddd;
+  --color-focus: #ff4500;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background: var(--color-fondo);
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form {
+  background: var(--color-blanco);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-texto);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--color-texto);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--color-texto);
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--color-borde);
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--color-focus);
+}
+
+.btn {
+  width: 100%;
+  padding: 0.7rem;
+  background: var(--color-primario);
+  color: var(--color-blanco);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.btn:hover {
+  background: var(--color-focus);
+}
+
+.register {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.register a {
+  color: var(--color-primario);
+  text-decoration: none;
+}
